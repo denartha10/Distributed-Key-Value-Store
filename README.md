@@ -1,6 +1,6 @@
 # Distributed Key-Value Store
 
-This distributed key-value store is inspired by the [https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf](Google File System) and consists of three main components: Client Server, Master Server (Coordination Server), and Storage Node. Each component plays a crucial role in ensuring efficient storage and retrieval of key-value pairs across a distributed architecture.
+This distributed key-value store is inspired by the [Google File System](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf) and consists of three main components: Client Server, Master Server (Coordination Server), and Storage Node. Each component plays a crucial role in ensuring efficient storage and retrieval of key-value pairs across a distributed architecture.
 
 ## Client Server
 The Client Server acts as the interface for clients to interact with the key-value store.
