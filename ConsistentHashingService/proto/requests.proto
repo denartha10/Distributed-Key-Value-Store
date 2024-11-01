@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package requests;
+
+option go_package = "./pb";
+
+service Requests {
+  rpc AddNode(AddRequest) returns (AddResponse);
+  rpc LocateKey(LocationRequest) returns (LocationResponse);
+}
+
+message AddRequest {
+  string Name = 1;
+  string IP = 2;
+  int32 Port = 3;
+}
+
+message AddResponse {
+  bool StatusAdded = 1;
+}
+
+message LocationRequest {
+  string Key = 1;
+}
+
+message LocationResponse {
+  string IP = 2;
+  int32 Port = 3;
+}
